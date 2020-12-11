@@ -77,3 +77,7 @@
 ## GitHub Actions
 
 TODO:
+
+## License
+
+[xiamen-housing-data-collection](https://github.com/wujunchuan/xiamen-housing-data-collection) 的源码使用 MIT License 发布。具体内容请查看 [LICENSE](./LICENSE) 文件。
