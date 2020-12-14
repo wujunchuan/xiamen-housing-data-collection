@@ -1,0 +1,21 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: |
+        docker login docker.pkg.github.com --username wujunchuan --password ${{ secrets.GITHUB_TOKEN }}
+        docker build . --file Dockerfile --tag xiamen-housing-data-collection:$(date +%s)
+        docker push docker.pkg.github.com/wujunchuan/xiamen-housing-data-collection/xiamen-housing-data-collection:${VERSION}
