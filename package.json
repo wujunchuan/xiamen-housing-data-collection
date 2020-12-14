@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js",
-    "clean": "rm ./temp/*"
+    "start": "node main.js"
   },
   "keywords": [],
   "author": "",
