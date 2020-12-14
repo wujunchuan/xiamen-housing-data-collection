@@ -2,13 +2,24 @@
 
 ![Node.js CI](https://github.com/wujunchuan/xiamen-housing-data-collection/workflows/Node.js%20CI/badge.svg)
 
-> Emm..这个厦门市住房管理局地址好像屏蔽了美国的IP, 所以不能利用 `GitHub Actions` 来白嫖算力了
+> Emm..这个厦门市住房管理局地址好像屏蔽了美国的 IP, 所以不能利用 `GitHub Actions` 来白嫖算力了。
 >
-> 需要将项目部署在国内, 创建 `cron` 任务定时去执行然后`commit`、`push`不过我不想折腾这个，需要的可以自行去研究
+> 需要将项目部署在国内, 创建 `cron` 定时任务，然后`commit`、`push`到仓库
+>
+> 不过我不想折腾这个，需要的可以自行去研究。
 >
 > [refer Github Actions status](https://github.com/wujunchuan/xiamen-housing-data-collection/actions/runs/415350193)
 
 利用 ~~Github Actions~~ 定时采集厦门市住房保障与房屋管理局的二手房网签情况
+
+## Use Docker
+
+- `git clone git@github.com:wujunchuan/xiamen-housing-data-collection.git`
+
+- `cd ./xiamen-housing-data-collection`
+
+- `docker run -it --rm -v $(pwd)/raw:/usr/src/nodejs/raw --name xiamen-housing-data-collection xiamenhousingdatacollection`
+
 
 ## OCR, 光学字符识别
 
