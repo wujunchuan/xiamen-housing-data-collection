@@ -18,7 +18,7 @@
 
 - `cd ./xiamen-housing-data-collection`
 
-- `docker run -it --rm -v $(pwd)/raw:/usr/src/nodejs/raw --name xiamen-housing-data-collection xiamenhousingdatacollection`
+- `docker run -it --rm -v $(pwd)/raw:/usr/src/nodejs/raw --name xiamen-housing-data-collection xiamen-housing-data-collection`
 
 
 ## OCR, 光学字符识别
